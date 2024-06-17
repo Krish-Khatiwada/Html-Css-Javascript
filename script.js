@@ -1,28 +1,28 @@
-let K = "vague"
-let L = 2
-console.log(K + L)
+// let K = "vague"
+// let L = 2
+// console.log(K + L)
 
-const a = {
-    name: "hero",
-    class: 10,
-    section: "D",
-    Profession: "Doctor"
-}
-a["friend"] = "zero"
-console.log(a)
+// const a = {
+//     name: "hero",
+//     class: 10,
+//     section: "D",
+//     Profession: "Doctor"
+// }
+// a["friend"] = "zero"
+// console.log(a)
 
-const b = 3.14
-// b = 3.1415 // b is already decleared
+// const b = 3.14
+// // b = 3.1415 // b is already decleared
 
-const dict = {
-    sierra: "a chain of hills or mountains, the peaks of which suggest the teeth of a saw.",
-    hallucinate: " to produce false information contrary to the intent of the user and present it as if true and factual.",
-    repudiate: "to reject or refuse to accept something",
-    deny: " to say something is not true",
-    monkey: "a small to medium-sized primate that typically has a long tail, most kinds of which live in trees in tropical countries."
-}
+// const dict = {
+//     sierra: "a chain of hills or mountains, the peaks of which suggest the teeth of a saw.",
+//     hallucinate: " to produce false information contrary to the intent of the user and present it as if true and factual.",
+//     repudiate: "to reject or refuse to accept something",
+//     deny: " to say something is not true",
+//     monkey: "a small to medium-sized primate that typically has a long tail, most kinds of which live in trees in tropical countries."
+// }
 
-console.log(dict.monkey)
+// console.log(dict.monkey)
 // let age = prompt("What's your age?")
 // age = Number.parseInt(age)
 // if (age >= 10 && age <= 20) {
@@ -52,7 +52,7 @@ console.log(dict.monkey)
 // }
 
 
-//Program to find whether a number is divisible by 2 and 3.
+// Program to find whether a number is divisible by 2 and 3.
 
 //  let x = prompt("Write a number!!")
 // x = Number.parseInt(x)
@@ -65,7 +65,7 @@ console.log(dict.monkey)
 //     console.log("An error occurred!!")
 // }
 
-//Program to find whether a number is divisible by 2 or 3.
+// Program to find whether a number is divisible by 2 or 3.
 
 // let x = prompt("Write a number!!")
 // x = Number.parseInt(x)
@@ -83,13 +83,75 @@ console.log(dict.monkey)
 // }
 
 
-
+// Ternary operators
 // let age = 18
 // let y = age < 18 ? "you cannot drive" : "you can drive"
 // console.log(y)
 
-let age = prompt("What is your age?")
-age = Number.parseInt(age)
-console.log("you", (age < 18 ? "cannot drive" : "can drive"))
+// let age = prompt("What is your age?")
+// age = Number.parseInt(age)
+// console.log("you" + (age < 18 ? " cannot drive" : "can drive"))
+
+// sample program of for loop
+// let factorial = 1
+// let n = prompt("Enter the value of n")
+// n = Number.parseInt(n)
+// for (let i = 1; i <= n; i++) {
+//     factorial *= i
+// }
+// console.log("the factorial of the program is " + factorial)
+
+
+// wap to display fibonacci series
+// let x = 1
+// let y = 1
+// let z = 0
+// console.log(z)
+// for (let i = 1; i <= 5; i++) {
+//     console.log(x)
+//     console.log(y)
+//     x = x + y
+//     y = x + y
+// }
+
+// Program to check given number is palindrome or not
+let r = 0
+let s = 0
+let n = prompt("Enter the value of n")
+n = Number.parseInt(n)
+let z = n
+
+while (n != 0) {
+    r = n % 10
+    s = s * 10 + r
+    n = n / 10
+}
+
+if (s === z) {
+    console.log(z + " is palindrome number")
+}
+else {
+    console.log(z + " is not palindrome number")
+}
+
+// Program to check given number is armstrong or not
+// let r = 0
+// let s = 1
+// let n = prompt("Enter the value of n")
+// let z = n
+
+// while (n != 0) {
+//     r = n % 10
+//     s = s * 10 + r ^ 3
+//     n = n / 10
+// }
+
+// if (s = z) {
+//     console.log(z + " is armstrong number")
+// }
+// else {
+//     console.log(z + " is not armstrong number")
+// }
+
 
 
