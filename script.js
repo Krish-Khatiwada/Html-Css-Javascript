@@ -115,43 +115,135 @@
 // }
 
 // Program to check given number is palindrome or not
-let r = 0
-let s = 0
-let n = prompt("Enter the value of n")
-n = Number.parseInt(n)
-let z = n
-
-while (n != 0) {
-    r = n % 10
-    s = s * 10 + r
-    n = n / 10
-}
-
-if (s === z) {
-    console.log(z + " is palindrome number")
-}
-else {
-    console.log(z + " is not palindrome number")
-}
-
-// Program to check given number is armstrong or not
 // let r = 0
-// let s = 1
+// let s = 0
 // let n = prompt("Enter the value of n")
+// n = Number.parseInt(n)
 // let z = n
 
 // while (n != 0) {
 //     r = n % 10
-//     s = s * 10 + r ^ 3
-//     n = n / 10
+//     s = s * 10 + r
+//     n = Math.floor(n / 10)
 // }
 
-// if (s = z) {
+// if (s === z) {
+//     console.log(z + " is palindrome number")
+// }
+// else {
+//     console.log(z + " is not palindrome number")
+// }
+
+// Program to check given number is armstrong or not
+// let r = 0
+// let s = 0
+// let n = prompt("Enter the value of n")
+// n = Number.parseInt(n)
+// let z = n
+
+// while (n != 0) {
+//     r = n % 10
+//     s = s + r ^ 3
+//     n = Math.floor(n / 10)
+// }
+
+// if (s === z) {
 //     console.log(z + " is armstrong number")
 // }
 // else {
 //     console.log(z + " is not armstrong number")
 // }
+
+// -----------------------------------------------------------------------------------------------------------------
+// Objects
+// const profile = {
+//     Name: "@krishkhatiwada",
+//     isfollow: true,
+//     following: 56,
+//     followers: 50,
+// };
+// console.log(profile)
+
+// write a code that gives grades to students according to their scores:
+
+// let score = prompt("Enter marks of a student:")
+// let grade
+
+// if (score >= 90 && score <= 100) {
+//     grade = "A"
+// }
+// else if (score >= 70 && score <= 89) {
+//     grade = "B"
+// }
+// else if (score >= 60 && score <= 69) {
+//     grade = "C"
+// }
+// else if (score >= 50 && score <= 59) {
+//     grade = "D"
+// }
+// else if (score >= 0 && score <= 49) {
+//     grade = "F"
+// }
+
+// console.log("Your grade is:", grade)
+
+// Create a game where you start with any random game number. Ask the user to keep guessing the game number untill the user enters correct value
+// let gameNum= 55
+// let userNum = prompt("Enter the game number:")
+
+// while(gameNum != userNum){
+//     userNum = prompt("You entered the wrong number. Please, Try again:")
+// }
+
+// console.log("Congratulations, you entered the right number")
+
+// Strings--------------------------------------------------------->>
+// Prompt the user to enter their full name. Generate the username for them based on the input. Start username with @, followed by their full name and ending with  the full length
+
+// let FullName = prompt("Enter your full name:")
+// let length = FullName.length
+
+// console.log("Your Username is: @" + FullName + length )
+
+// Arrays----------------------------------------------------------->>
+
+// let marks = [85, 97, 44, 37, 76, 60]
+// let length = marks.length
+// let sum = 0
+
+// for (let Elements of marks) {
+//     sum += Elements
+// }
+
+// let Avg = sum/length
+
+// console.log(`Average marks of the class: ${Avg}`)
+
+// For a given array of five items -> [240, 645, 300, 900, 50] All items have an offer of 10% OFF in them. Change the array to store final price after applying offer.
+
+// let items = [240, 645, 300, 900, 50]
+// let OFF = 0
+
+// let idx = 0
+// for (let item of items){
+//     console.log(`value of index ${idx} = ${item}`) 
+//     let offer = item/10;
+//     items[idx] -= offer; 
+//     console.log(`Value after offer = ${items[idx]}`)
+//     idx++
+// }
+
+let items = [240, 645, 300, 900, 50]
+for (let i = 0; i <= items.length; i++) {
+let offer = items[i]/10;
+items[i] -= offer;
+}
+
+console.log(items)
+
+
+
+// functions------------------------------------------------------->>
 
 
 
