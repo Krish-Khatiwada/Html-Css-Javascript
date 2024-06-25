@@ -219,31 +219,141 @@
 
 // console.log(`Average marks of the class: ${Avg}`)
 
-// For a given array of five items -> [240, 645, 300, 900, 50] All items have an offer of 10% OFF in them. Change the array to store final price after applying offer.
+// Q1. For a given array of five items -> [240, 645, 300, 900, 50] All items have an offer of 10% OFF in them. Change the array to store final price after applying offer.
 
 // let items = [240, 645, 300, 900, 50]
-// let OFF = 0
 
-// let idx = 0
-// for (let item of items){
-//     console.log(`value of index ${idx} = ${item}`) 
-//     let offer = item/10;
-//     items[idx] -= offer; 
-//     console.log(`Value after offer = ${items[idx]}`)
-//     idx++
+// for (let i = 0; i < items.length; i++) {
+//     let Offer = (10 / 100) * items[i]
+//     items[i] -= Offer
+// }
+// console.log(items)
+
+// let items = [240, 645, 300, 900, 50]
+// let i= 0
+
+// for(let el of items){
+//     console.log(`item of index ${i} = ${el}`)
+//     let offer = (10 / 100) * items[i]
+//     items[i] -= offer
+//     i++
+// }
+// console.log(items)
+
+// Q2. Create an array to store companies -> Bloomberg, Microsoft, Uber, Google, IBM, Netflix
+// a. Remove the first company from the array
+// b. remove Uber & Add Ola in its place
+// c. Add Amazon in the end 
+
+// let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]
+
+// companies.shift()
+// console.log(companies)
+
+// companies.splice(1, 1, "Ola")
+// console.log(companies)
+
+// companies.push("Amazon")
+// console.log(companies)  t
+// functions------------------------------------------------------->>
+// function sum(x, y) {
+//     s = x + y;
+//     return s;
 // }
 
-let items = [240, 645, 300, 900, 50]
-for (let i = 0; i <= items.length; i++) {
-let offer = items[i]/10;
-items[i] -= offer;
-}
+// let add = sum(8, 7)
+// console.log(add)
 
-console.log(items)
+// function hello() {
+//     console.log("This is console window for js")
+// }
+// hello();
+
+// // Arrow function------------->
+// const Arrowsum = (a, b) => {
+//     console.log(a + b);
+// }
+// Arrowsum(5, 7);
+
+// const multi = (a, b) => {
+//     m = a*b;
+//     return m;
+// }
+
+// let multiplication = multi(8, 7)
+// console.log(multiplication)
+
+// Q1. Create a function using the "function" keyword that takes a String as an arguement and returns the number of vowels in the string.
+
+// function countvowels(string) {
+//     let count = 0
+//     for (const char of string) {
+//         // cons ole.log(char);
+//         if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+//             count++; 
+//         }
+//     }
+//     console.log(count);
+// }
+// countvowels("pneumonoultramicroscopicsilicavolcanoconiosis")
+
+// const arrow_count_vow = (string) => {
+//     let count = 0
+//     for (const char of string) {
+//         // cons ole.log(char);
+//         if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+//             count++; 
+//         }
+//     } f
+//     console.log(count);
+// }
+// arrow_count_vow("pneumonoultramicroscopicsilicavolcanoconiosis")
+
+
+// ForEach loop
+// let fo_ea = [1, 6, 5, 9, 3, 2, 7, 8, 4]
+
+// fo_ea.forEach((num) => {
+//     num *= num
+//     console.log(num)
+// });
+// console.log(window)
+
+// DOM===>>Document Object Model-------------------------------------------------------------------->>
+
+// let h1 = document.querySelector("h1")
+
+// h1.addEventListener("click", function () {
+//     h1.innerHTML = "Yes sir! I'm tryin to make a proper functioning bulb"
+// })
+
+// let bulb = document.querySelector("#bulb")
+// let button = document.querySelector("button")
+
+// let click = 0;
+// button.addEventListener("click", function () {
+//     if (click == 0) {
+//         button.innerHTML = "OFF"
+//         button.style.backgroundColor = "red"
+//         button.style.color = "#000"
+//         button.style.cursor = "pointer"
+//         bulb.style.backgroundColor = "yellow"
+//         click++
+//     }
+//     else {
+//         button.innerHTML = "ON"
+//         button.style.backgroundColor = "blue"
+//         button.style.color = "#fff"
+//         bulb.style.backgroundColor = "transparent"
+//         click--
+//     }
+// })
 
 
 
-// functions------------------------------------------------------->>
+
+
+
 
 
 
