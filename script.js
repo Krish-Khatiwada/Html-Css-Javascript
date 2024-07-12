@@ -333,15 +333,15 @@
 // let click = 0;
 // button.addEventListener("click", function () {
 //     if (click == 0) {
-//         button.innerHTML = "OFF"
+//         button.innerText = "OFF"
 //         button.style.backgroundColor = "red"
 //         button.style.color = "#000"
 //         button.style.cursor = "pointer"
-//         bulb.style.backgroundColor = "yellow"
+//         bulb.style.backgroundColor = "gold"
 //         click++
 //     }
 //     else {
-//         button.innerHTML = "ON"
+//         button.innerText = "ON"
 //         button.style.backgroundColor = "blue"
 //         button.style.color = "#fff"
 //         bulb.style.backgroundColor = "transparent"
@@ -350,10 +350,62 @@
 // })
 
 
+// let button = document.createElement("button")
+// button.innerText = "Click me!"
+// button.style.backgroundColor = "blue"
+// button.style.color = "white"
+// button.style.border = "none"
+// button.style.borderRadius = "1vmin"
+// button.style.cursor = "pointer"
+// button.style.padding = "1vmin"
 
+// let body = document.querySelector("body")
+// body.prepend(button)
 
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let a;
+// while (a != 0) {
+//     a = prompt("Enter any number")
+//     a = Number.parseInt(a)
+//     arr.push(a)
+// } 
+// console.log(arr)
 
+// let array = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+// let newarr = array.filter((a) => {
+//     return a%10 == 0;
+// } )
 
+// console.log(newarr)
 
+// let a = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+// let new_a = a.map((x) => {
+//     return x*x;
+// })
+// console.log(new_a)
 
+// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let new_a = a.reduce((x, y) => {
+//     return x * y;
+// })
+// console.log(new_a)
+
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+console.log(randomNumber)
+let guess = 0;
+let a;
+while (a != randomNumber)  {
+    let a = prompt("guess the number")
+    a = Number.parseInt(a)
+    guess++
+    if (a == randomNumber) {
+        alert(`Congratulations you guessed the correct number and your score is ${100 - guess}`)
+    } else {
+        if (a < randomNumber) {
+           alert(`Try again, your randomNumber is greater then ${a}`)
+        } else {
+            alert(`Try again, your randomNumber is lesser then ${a}`)
+        }
+    }
+} 
 
